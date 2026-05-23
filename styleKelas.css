@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid rgb(105, 137, 147);
+    background: rgb(104, 142, 147);
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.Logo-Brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.Logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.logoSMK h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+table{
+    border: 1px solid #5a7f8b;
+    border-collapse: collapse;
+    width: min(100%, 520px);
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+p {
+    text-align: center;
+    margin: 1.5rem 0 1rem;
+}
+
+.judul {
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.judul th {
+    background-color: rgb(167, 197, 212);
+    padding: 14px 12px;
+    text-align: center;
+    border-bottom: 2px solid #5a7f8b;
+    font-size: 1rem;
+}
+
+.data {
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.data td {
+    padding: 12px;
+    text-align: center;
+    border-top: 1px solid #dbe7eb;
+}
+
+
+
+.NaviLink {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.NaviLink li a {
+    text-decoration: none;
+    color: rgb(167, 197, 212);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.NaviLink li a {
+    transition: color 0.3s ease; 
+}
+
+.NaviLink li a:hover {
+    color: rgb(44, 62, 62); 
+}
+
+.Logo img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.Logo img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+
+@media only screen and (max-widht: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .NaviLink {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 5rem;
+    }
+
+
+}
+
+
